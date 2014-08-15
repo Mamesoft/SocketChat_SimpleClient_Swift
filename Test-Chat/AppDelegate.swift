@@ -11,21 +11,17 @@ class AppDelegate: NSObject, NSApplicationDelegate, SocketIODelegate {
     var socketIO: SocketIO!
                             
     @IBOutlet weak var window: NSWindow!
-
     
     @IBOutlet weak var inoutTextField: NSTextField!
     @IBOutlet weak var commentTextField: NSTextField!
     @IBOutlet var logTextView: NSTextView!
+    @IBOutlet weak var inoutButton: NSButton!
+    @IBOutlet weak var usersTextField: NSTextField!
+    @IBOutlet weak var hashtagTextField: NSTextField!
 
     func applicationDidFinishLaunching(aNotification: NSNotification?) {
         socketIO = SocketIO(delegate: self)
-        
         socketIO.connectToHost("localhost", onPort: 8080) //Connect Host
-        
-        
-        //socketIO.sendEvent("inout", withData: ["name": "Test"])
-        
-        
     }
     
     
@@ -42,8 +38,6 @@ class AppDelegate: NSObject, NSApplicationDelegate, SocketIODelegate {
         let dataany: AnyObject! = json["args"]
         let data: JSONValue = JSONValue(dataany[0])
         
-        println(data)
-        
         switch event{
         case "init":
             println("init")
@@ -59,21 +53,36 @@ class AppDelegate: NSObject, NSApplicationDelegate, SocketIODelegate {
             println("users")
             var usersjson: [JSONValue] = data["users"].array!
             for value in usersjson{
-                users[value["id"].integer!] = value
+                edituser(value)
             }
-            println(users)
+            showusers()
             
         case "newuser":
             println("newuser")
+            edituser(data)
+            showusers()
             
         case "inout":
             println("inout")
+            edituser(data)
+            showusers()
             
         case "deluser":
             println("deluser")
+            users.removeValueForKey(data.integer!)
+            showusers()
             
         case "userinfo":
             println("userinfo")
+            var rom = data["rom"].bool!
+            if(rom == true){
+                inoutButton.title = "In"
+                inoutTextField.enabled = true
+                
+            }else{
+                inoutButton.title = "Out"
+                inoutTextField.enabled = false
+            }
             
         case "log":
             println("log")
@@ -92,7 +101,10 @@ class AppDelegate: NSObject, NSApplicationDelegate, SocketIODelegate {
         "ip":      data["ip"].string!,
         "time":    data["time"].string!,
         ] )
-        
+    }
+    
+    func edituser(data: JSONValue) {
+        users[data["id"].integer!] = data
     }
     
     func showlogs(){
@@ -102,17 +114,36 @@ class AppDelegate: NSObject, NSApplicationDelegate, SocketIODelegate {
         }
         logTextView.string = logstring
     }
-
-
+    
+    func showusers(){
+        var romusers: [JSONValue] = []
+        var onlineusers: [JSONValue] = []
+        for (id, user) in users{
+            var rom: Bool = user["rom"].bool!
+            if(rom == true){
+                romusers.append(user)
+                
+            }else{
+                onlineusers.append(user)
+            }
+        }
+        var userstring = "Online(\(onlineusers.count)): "
+        for user: JSONValue in onlineusers{
+            userstring += user["name"].string! + "(" + user["ip"].string! + "), "
+        }
+        userstring += "Rom(\(romusers.count))"
+        
+        usersTextField.stringValue = userstring
+    }
+    
     @IBAction func inout(sender: AnyObject) {
-        println(inoutTextField.stringValue)
         socketIO.sendEvent("inout", withData: ["name": inoutTextField.stringValue])
     }
     
     @IBAction func commentTextFieldReturn(sender: NSTextField) {
-        socketIO.sendEvent("say", withData: ["comment": commentTextField.stringValue])
+        socketIO.sendEvent("say", withData: ["comment": commentTextField.stringValue, "channel": hashtagTextField.stringValue])
+        commentTextField.stringValue = ""
     }
-    
     
     func applicationWillTerminate(aNotification: NSNotification?) {
         // Insert code here to tear down your application
