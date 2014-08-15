@@ -1,0 +1,7 @@
+=SocketChat_SimpleClient_Swift=
+
+This is [https://github.com/uhyo/socketchat SocketChat] Client by Swift.
+
+==required Library==
+*Socket.IO-objc https://github.com/pkyeck/socket.IO-objc
+*SocketRocket https://github.com/square/SocketRocket

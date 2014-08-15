@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42773DE5199DB2B0001FDCF9 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42773DE4199DB2B0001FDCF9 /* SwiftyJSON.swift */; };
+		4277D2F3199D08A300C85A03 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4277D2F2199D08A300C85A03 /* main.swift */; };
+		4277D2F5199D08A300C85A03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4277D2F4199D08A300C85A03 /* AppDelegate.swift */; };
+		4277D2F7199D08A300C85A03 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4277D2F6199D08A300C85A03 /* Images.xcassets */; };
+		4277D2FA199D08A300C85A03 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4277D2F8199D08A300C85A03 /* MainMenu.xib */; };
+		4277D31D199D08E400C85A03 /* SocketIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 4277D313199D08E400C85A03 /* SocketIO.m */; };
+		4277D31E199D08E400C85A03 /* SocketIOJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 4277D315199D08E400C85A03 /* SocketIOJSONSerialization.m */; };
+		4277D31F199D08E400C85A03 /* SocketIOPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4277D317199D08E400C85A03 /* SocketIOPacket.m */; };
+		4277D320199D08E400C85A03 /* SocketIOTransportWebsocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4277D31A199D08E400C85A03 /* SocketIOTransportWebsocket.m */; };
+		4277D321199D08E400C85A03 /* SocketIOTransportXHR.m in Sources */ = {isa = PBXBuildFile; fileRef = 4277D31C199D08E400C85A03 /* SocketIOTransportXHR.m */; };
+		4284B4B2199D09BE00A20CD1 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4284B4B1199D09BE00A20CD1 /* SRWebSocket.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4277D300199D08A400C85A03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4277D2E5199D08A300C85A03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4277D2EC199D08A300C85A03;
+			remoteInfo = "Test-Chat";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		42773DE3199DB2B0001FDCF9 /* SwiftyJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwiftyJSON.h; path = ../SwiftyJSON/SwiftyJSON/SwiftyJSON.h; sourceTree = "<group>"; };
+		42773DE4199DB2B0001FDCF9 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../SwiftyJSON/SwiftyJSON/SwiftyJSON.swift; sourceTree = "<group>"; };
+		4277D2ED199D08A300C85A03 /* Test-Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test-Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4277D2F1199D08A300C85A03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4277D2F2199D08A300C85A03 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4277D2F4199D08A300C85A03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4277D2F6199D08A300C85A03 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4277D2F9199D08A300C85A03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4277D2FF199D08A400C85A03 /* Test-ChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test-ChatTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4277D311199D08E400C85A03 /* Test-Chat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Test-Chat-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		4277D312199D08E400C85A03 /* SocketIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocketIO.h; path = "../socket.IO-objc/SocketIO.h"; sourceTree = "<group>"; };
+		4277D313199D08E400C85A03 /* SocketIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocketIO.m; path = "../socket.IO-objc/SocketIO.m"; sourceTree = "<group>"; };
+		4277D314199D08E400C85A03 /* SocketIOJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocketIOJSONSerialization.h; path = "../socket.IO-objc/SocketIOJSONSerialization.h"; sourceTree = "<group>"; };
+		4277D315199D08E400C85A03 /* SocketIOJSONSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocketIOJSONSerialization.m; path = "../socket.IO-objc/SocketIOJSONSerialization.m"; sourceTree = "<group>"; };
+		4277D316199D08E400C85A03 /* SocketIOPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocketIOPacket.h; path = "../socket.IO-objc/SocketIOPacket.h"; sourceTree = "<group>"; };
+		4277D317199D08E400C85A03 /* SocketIOPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocketIOPacket.m; path = "../socket.IO-objc/SocketIOPacket.m"; sourceTree = "<group>"; };
+		4277D318199D08E400C85A03 /* SocketIOTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocketIOTransport.h; path = "../socket.IO-objc/SocketIOTransport.h"; sourceTree = "<group>"; };
+		4277D319199D08E400C85A03 /* SocketIOTransportWebsocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocketIOTransportWebsocket.h; path = "../socket.IO-objc/SocketIOTransportWebsocket.h"; sourceTree = "<group>"; };
+		4277D31A199D08E400C85A03 /* SocketIOTransportWebsocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocketIOTransportWebsocket.m; path = "../socket.IO-objc/SocketIOTransportWebsocket.m"; sourceTree = "<group>"; };
+		4277D31B199D08E400C85A03 /* SocketIOTransportXHR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocketIOTransportXHR.h; path = "../socket.IO-objc/SocketIOTransportXHR.h"; sourceTree = "<group>"; };
+		4277D31C199D08E400C85A03 /* SocketIOTransportXHR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocketIOTransportXHR.m; path = "../socket.IO-objc/SocketIOTransportXHR.m"; sourceTree = "<group>"; };
+		4284B4AF199D09BE00A20CD1 /* SocketRocket-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SocketRocket-Prefix.pch"; path = "../SocketRocket/SocketRocket/SocketRocket-Prefix.pch"; sourceTree = "<group>"; };
+		4284B4B0199D09BE00A20CD1 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SRWebSocket.h; path = ../SocketRocket/SocketRocket/SRWebSocket.h; sourceTree = "<group>"; };
+		4284B4B1199D09BE00A20CD1 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SRWebSocket.m; path = ../SocketRocket/SocketRocket/SRWebSocket.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4277D2EA199D08A300C85A03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4277D2FC199D08A400C85A03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42773DE2199DB2A5001FDCF9 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				42773DE3199DB2B0001FDCF9 /* SwiftyJSON.h */,
+				42773DE4199DB2B0001FDCF9 /* SwiftyJSON.swift */,
+			);
+			name = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		4277D2E4199D08A300C85A03 = {
+			isa = PBXGroup;
+			children = (
+				4277D30F199D08CB00C85A03 /* Libs */,
+				4277D2EF199D08A300C85A03 /* Test-Chat */,
+				4277D2EE199D08A300C85A03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4277D2EE199D08A300C85A03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4277D2ED199D08A300C85A03 /* Test-Chat.app */,
+				4277D2FF199D08A400C85A03 /* Test-ChatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4277D2EF199D08A300C85A03 /* Test-Chat */ = {
+			isa = PBXGroup;
+			children = (
+				4277D2F4199D08A300C85A03 /* AppDelegate.swift */,
+				4277D2F6199D08A300C85A03 /* Images.xcassets */,
+				4277D2F8199D08A300C85A03 /* MainMenu.xib */,
+				4277D311199D08E400C85A03 /* Test-Chat-Bridging-Header.h */,
+				4277D2F0199D08A300C85A03 /* Supporting Files */,
+			);
+			path = "Test-Chat";
+			sourceTree = "<group>";
+		};
+		4277D2F0199D08A300C85A03 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4277D2F1199D08A300C85A03 /* Info.plist */,
+				4277D2F2199D08A300C85A03 /* main.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4277D30F199D08CB00C85A03 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				42773DE2199DB2A5001FDCF9 /* SwiftyJSON */,
+				4284B4AE199D09A000A20CD1 /* SocketRocket */,
+				4277D310199D08D400C85A03 /* Socket.io */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		4277D310199D08D400C85A03 /* Socket.io */ = {
+			isa = PBXGroup;
+			children = (
+				4277D312199D08E400C85A03 /* SocketIO.h */,
+				4277D313199D08E400C85A03 /* SocketIO.m */,
+				4277D314199D08E400C85A03 /* SocketIOJSONSerialization.h */,
+				4277D315199D08E400C85A03 /* SocketIOJSONSerialization.m */,
+				4277D316199D08E400C85A03 /* SocketIOPacket.h */,
+				4277D317199D08E400C85A03 /* SocketIOPacket.m */,
+				4277D318199D08E400C85A03 /* SocketIOTransport.h */,
+				4277D319199D08E400C85A03 /* SocketIOTransportWebsocket.h */,
+				4277D31A199D08E400C85A03 /* SocketIOTransportWebsocket.m */,
+				4277D31B199D08E400C85A03 /* SocketIOTransportXHR.h */,
+				4277D31C199D08E400C85A03 /* SocketIOTransportXHR.m */,
+			);
+			name = Socket.io;
+			sourceTree = "<group>";
+		};
+		4284B4AE199D09A000A20CD1 /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				4284B4AF199D09BE00A20CD1 /* SocketRocket-Prefix.pch */,
+				4284B4B0199D09BE00A20CD1 /* SRWebSocket.h */,
+				4284B4B1199D09BE00A20CD1 /* SRWebSocket.m */,
+			);
+			name = SocketRocket;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4277D2EC199D08A300C85A03 /* Test-Chat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4277D309199D08A400C85A03 /* Build configuration list for PBXNativeTarget "Test-Chat" */;
+			buildPhases = (
+				4277D2E9199D08A300C85A03 /* Sources */,
+				4277D2EA199D08A300C85A03 /* Frameworks */,
+				4277D2EB199D08A300C85A03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Test-Chat";
+			productName = "Test-Chat";
+			productReference = 4277D2ED199D08A300C85A03 /* Test-Chat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4277D2FE199D08A400C85A03 /* Test-ChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4277D30C199D08A400C85A03 /* Build configuration list for PBXNativeTarget "Test-ChatTests" */;
+			buildPhases = (
+				4277D2FB199D08A400C85A03 /* Sources */,
+				4277D2FC199D08A400C85A03 /* Frameworks */,
+				4277D2FD199D08A400C85A03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4277D301199D08A400C85A03 /* PBXTargetDependency */,
+			);
+			name = "Test-ChatTests";
+			productName = "Test-ChatTests";
+			productReference = 4277D2FF199D08A400C85A03 /* Test-ChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4277D2E5199D08A300C85A03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Mamesoft;
+				TargetAttributes = {
+					4277D2EC199D08A300C85A03 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					4277D2FE199D08A400C85A03 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 4277D2EC199D08A300C85A03;
+					};
+				};
+			};
+			buildConfigurationList = 4277D2E8199D08A300C85A03 /* Build configuration list for PBXProject "Test-Chat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4277D2E4199D08A300C85A03;
+			productRefGroup = 4277D2EE199D08A300C85A03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4277D2EC199D08A300C85A03 /* Test-Chat */,
+				4277D2FE199D08A400C85A03 /* Test-ChatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4277D2EB199D08A300C85A03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4277D2F7199D08A300C85A03 /* Images.xcassets in Resources */,
+				4277D2FA199D08A300C85A03 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4277D2FD199D08A400C85A03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4277D2E9199D08A300C85A03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4277D31D199D08E400C85A03 /* SocketIO.m in Sources */,
+				4277D2F5199D08A300C85A03 /* AppDelegate.swift in Sources */,
+				4277D321199D08E400C85A03 /* SocketIOTransportXHR.m in Sources */,
+				4277D31F199D08E400C85A03 /* SocketIOPacket.m in Sources */,
+				4284B4B2199D09BE00A20CD1 /* SRWebSocket.m in Sources */,
+				4277D2F3199D08A300C85A03 /* main.swift in Sources */,
+				42773DE5199DB2B0001FDCF9 /* SwiftyJSON.swift in Sources */,
+				4277D320199D08E400C85A03 /* SocketIOTransportWebsocket.m in Sources */,
+				4277D31E199D08E400C85A03 /* SocketIOJSONSerialization.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4277D2FB199D08A400C85A03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4277D301199D08A400C85A03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4277D2EC199D08A300C85A03 /* Test-Chat */;
+			targetProxy = 4277D300199D08A400C85A03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4277D2F8199D08A300C85A03 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4277D2F9199D08A300C85A03 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4277D307199D08A400C85A03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4277D308199D08A400C85A03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4277D30A199D08A400C85A03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Test-Chat/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Test-Chat-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4277D30B199D08A400C85A03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Test-Chat/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Test-Chat-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		4277D30D199D08A400C85A03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Test-ChatTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test-Chat.app/Contents/MacOS/Test-Chat";
+			};
+			name = Debug;
+		};
+		4277D30E199D08A400C85A03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Test-ChatTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test-Chat.app/Contents/MacOS/Test-Chat";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4277D2E8199D08A300C85A03 /* Build configuration list for PBXProject "Test-Chat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4277D307199D08A400C85A03 /* Debug */,
+				4277D308199D08A400C85A03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4277D309199D08A400C85A03 /* Build configuration list for PBXNativeTarget "Test-Chat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4277D30A199D08A400C85A03 /* Debug */,
+				4277D30B199D08A400C85A03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4277D30C199D08A400C85A03 /* Build configuration list for PBXNativeTarget "Test-ChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4277D30D199D08A400C85A03 /* Debug */,
+				4277D30E199D08A400C85A03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4277D2E5199D08A300C85A03 /* Project object */;
+}
