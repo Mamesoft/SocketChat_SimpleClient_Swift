@@ -50,59 +50,58 @@ class AppDelegate: NSObject, NSApplicationDelegate, SocketIODelegate {
             
             var logsjson: [JSONValue] = data["logs"].array!
             for var i = logsjson.count - 1; i >= 0; --i{
-            //for log in logsjson{
-                logs.append( [
-                    "name":    logsjson[i]["name"].string!,
-                    "comment": logsjson[i]["comment"].string!,
-                    "ip":      logsjson[i]["ip"].string!,
-                    "time":    logsjson[i]["time"].string!,
-                    ] )
+                addlog(logsjson[i])
             }
             
-            var logstring = ""
-            for log: Dictionary<String, String> in logs{
-                logstring = log["name"]! + "> " + log["comment"]! + " ( " + log["ip"]! + ", " + log["time"]! + " )\n" + logstring
-            }
-            logTextView.string = logstring
+            showlogs()
 
         case "users":
             println("users")
-            println(data["users"])
             var usersjson: [JSONValue] = data["users"].array!
             for value in usersjson{
                 users[value["id"].integer!] = value
             }
             println(users)
+            
         case "newuser":
             println("newuser")
+            
         case "inout":
             println("inout")
+            
         case "deluser":
             println("deluser")
+            
         case "userinfo":
             println("userinfo")
+            
         case "log":
-            
             println("log")
-            logs.append( [
-                "name":    data["name"].string!,
-                "comment": data["comment"].string!,
-                "ip":      data["ip"].string!,
-                "time":    data["time"].string!,
-            ] )
-            
-            
-            var logstring = ""
-            for log: Dictionary<String, String> in logs{
-                logstring = log["name"]! + "> " + log["comment"]! + " ( " + log["ip"]! + ", " + log["time"]! + " )\n" + logstring
-            }
-            logTextView.string = logstring
+            addlog(data)
+            showlogs()
             
         default:
             println("no-maching")
         }
     }
-
+    
+    func addlog(data: JSONValue) {
+        logs.append( [
+        "name":    data["name"].string!,
+        "comment": data["comment"].string!,
+        "ip":      data["ip"].string!,
+        "time":    data["time"].string!,
+        ] )
+        
+    }
+    
+    func showlogs(){
+        var logstring = ""
+        for log: Dictionary<String, String> in logs{
+            logstring = log["name"]! + "> " + log["comment"]! + " ( " + log["ip"]! + ", " + log["time"]! + " )\n" + logstring
+        }
+        logTextView.string = logstring
+    }
 
 
     @IBAction func inout(sender: AnyObject) {
