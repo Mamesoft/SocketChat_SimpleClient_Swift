@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		42773DE5199DB2B0001FDCF9 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42773DE4199DB2B0001FDCF9 /* SwiftyJSON.swift */; };
 		4277D2F3199D08A300C85A03 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4277D2F2199D08A300C85A03 /* main.swift */; };
 		4277D2F5199D08A300C85A03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4277D2F4199D08A300C85A03 /* AppDelegate.swift */; };
 		4277D2F7199D08A300C85A03 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4277D2F6199D08A300C85A03 /* Images.xcassets */; };
@@ -18,6 +17,7 @@
 		4277D320199D08E400C85A03 /* SocketIOTransportWebsocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4277D31A199D08E400C85A03 /* SocketIOTransportWebsocket.m */; };
 		4277D321199D08E400C85A03 /* SocketIOTransportXHR.m in Sources */ = {isa = PBXBuildFile; fileRef = 4277D31C199D08E400C85A03 /* SocketIOTransportXHR.m */; };
 		4284B4B2199D09BE00A20CD1 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4284B4B1199D09BE00A20CD1 /* SRWebSocket.m */; };
+		42A539E3199F5EEC00DF5B59 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A539E2199F5EEC00DF5B59 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +31,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		42773DE3199DB2B0001FDCF9 /* SwiftyJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwiftyJSON.h; path = ../SwiftyJSON/SwiftyJSON/SwiftyJSON.h; sourceTree = "<group>"; };
-		42773DE4199DB2B0001FDCF9 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../SwiftyJSON/SwiftyJSON/SwiftyJSON.swift; sourceTree = "<group>"; };
 		4277D2ED199D08A300C85A03 /* Test-Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test-Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4277D2F1199D08A300C85A03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4277D2F2199D08A300C85A03 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -55,6 +53,8 @@
 		4284B4AF199D09BE00A20CD1 /* SocketRocket-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SocketRocket-Prefix.pch"; path = "../SocketRocket/SocketRocket/SocketRocket-Prefix.pch"; sourceTree = "<group>"; };
 		4284B4B0199D09BE00A20CD1 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SRWebSocket.h; path = ../SocketRocket/SocketRocket/SRWebSocket.h; sourceTree = "<group>"; };
 		4284B4B1199D09BE00A20CD1 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SRWebSocket.m; path = ../SocketRocket/SocketRocket/SRWebSocket.m; sourceTree = "<group>"; };
+		42A539E1199F5EEC00DF5B59 /* SwiftyJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwiftyJSON.h; path = ../SwiftyJSON/SwiftyJSON/SwiftyJSON.h; sourceTree = "<group>"; };
+		42A539E2199F5EEC00DF5B59 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../SwiftyJSON/SwiftyJSON/SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,15 +75,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		42773DE2199DB2A5001FDCF9 /* SwiftyJSON */ = {
-			isa = PBXGroup;
-			children = (
-				42773DE3199DB2B0001FDCF9 /* SwiftyJSON.h */,
-				42773DE4199DB2B0001FDCF9 /* SwiftyJSON.swift */,
-			);
-			name = SwiftyJSON;
-			sourceTree = "<group>";
-		};
 		4277D2E4199D08A300C85A03 = {
 			isa = PBXGroup;
 			children = (
@@ -126,7 +117,7 @@
 		4277D30F199D08CB00C85A03 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
-				42773DE2199DB2A5001FDCF9 /* SwiftyJSON */,
+				42A539E0199F5ECF00DF5B59 /* SwiftyJSON */,
 				4284B4AE199D09A000A20CD1 /* SocketRocket */,
 				4277D310199D08D400C85A03 /* Socket.io */,
 			);
@@ -159,6 +150,15 @@
 				4284B4B1199D09BE00A20CD1 /* SRWebSocket.m */,
 			);
 			name = SocketRocket;
+			sourceTree = "<group>";
+		};
+		42A539E0199F5ECF00DF5B59 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				42A539E1199F5EEC00DF5B59 /* SwiftyJSON.h */,
+				42A539E2199F5EEC00DF5B59 /* SwiftyJSON.swift */,
+			);
+			name = SwiftyJSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,7 +266,7 @@
 				4277D31F199D08E400C85A03 /* SocketIOPacket.m in Sources */,
 				4284B4B2199D09BE00A20CD1 /* SRWebSocket.m in Sources */,
 				4277D2F3199D08A300C85A03 /* main.swift in Sources */,
-				42773DE5199DB2B0001FDCF9 /* SwiftyJSON.swift in Sources */,
+				42A539E3199F5EEC00DF5B59 /* SwiftyJSON.swift in Sources */,
 				4277D320199D08E400C85A03 /* SocketIOTransportWebsocket.m in Sources */,
 				4277D31E199D08E400C85A03 /* SocketIOJSONSerialization.m in Sources */,
 			);
@@ -402,6 +402,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Test-Chat-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Release;
 		};

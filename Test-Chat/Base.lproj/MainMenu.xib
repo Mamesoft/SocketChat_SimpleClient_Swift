@@ -14,11 +14,13 @@
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Test_Chat" customModuleProvider="target">
             <connections>
                 <outlet property="commentTextField" destination="RaH-70-Vhy" id="KSY-MU-Wc5"/>
+                <outlet property="hashtagLabel" destination="1Ye-kg-95d" id="eLa-Hg-mrG"/>
                 <outlet property="hashtagTextField" destination="Cb1-uH-WKJ" id="XAo-hp-Kch"/>
                 <outlet property="inout" destination="pj3-91-XFA" id="yAM-Z0-kXO"/>
                 <outlet property="inoutButton" destination="pj3-91-XFA" id="kyt-dp-EFq"/>
                 <outlet property="inoutTextField" destination="j09-yw-bGC" id="tT6-B8-jud"/>
                 <outlet property="inoutTextFieldReturn" destination="j09-yw-bGC" id="B3E-0Z-Sim"/>
+                <outlet property="logScrollView" destination="e3O-F2-gwj" id="1Bd-tE-pZl"/>
                 <outlet property="logTextView" destination="ihg-3j-dTj" id="rHy-HY-Efd"/>
                 <outlet property="usersTextField" destination="xLQ-xu-0TY" id="amH-6u-0gt"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
@@ -677,14 +679,16 @@
         <window title="SocketChat" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="855" height="649"/>
+            <rect key="contentRect" x="335" y="390" width="855" height="650"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+            <value key="minSize" type="size" width="855" height="650"/>
+            <value key="maxSize" type="size" width="855" height="650"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="855" height="649"/>
+                <rect key="frame" x="0.0" y="0.0" width="855" height="650"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j09-yw-bGC">
-                        <rect key="frame" x="20" y="607" width="120" height="22"/>
+                        <rect key="frame" x="20" y="606" width="120" height="22"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Your Name" drawsBackground="YES" usesSingleLineMode="YES" id="DDx-h9-EY0">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -692,7 +696,7 @@
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pj3-91-XFA">
-                        <rect key="frame" x="142" y="599" width="88" height="32"/>
+                        <rect key="frame" x="142" y="600" width="80" height="32"/>
                         <buttonCell key="cell" type="push" title="In" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Zbl-qc-eJm">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -702,7 +706,7 @@
                         </connections>
                     </button>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RaH-70-Vhy">
-                        <rect key="frame" x="232" y="605" width="437" height="22"/>
+                        <rect key="frame" x="224" y="606" width="440" height="22"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="tyW-Dh-BKH">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -713,7 +717,7 @@
                         </connections>
                     </textField>
                     <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3O-F2-gwj">
-                        <rect key="frame" x="20" y="20" width="815" height="516"/>
+                        <rect key="frame" x="20" y="20" width="815" height="517"/>
                         <clipView key="contentView" ambiguous="YES" misplaced="YES" id="EhQ-78-e3J">
                             <rect key="frame" x="1" y="1" width="223" height="133"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -722,10 +726,10 @@
                                     <rect key="frame" x="0.0" y="0.0" width="223" height="535"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <size key="minSize" width="813" height="514"/>
+                                    <size key="minSize" width="813" height="515"/>
                                     <size key="maxSize" width="819" height="10000000"/>
                                     <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <size key="minSize" width="813" height="514"/>
+                                    <size key="minSize" width="813" height="515"/>
                                     <size key="maxSize" width="819" height="10000000"/>
                                 </textView>
                             </subviews>
@@ -741,32 +745,35 @@
                         </scroller>
                     </scrollView>
                     <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="85v-bM-F5w">
-                        <rect key="frame" x="18" y="544" width="819" height="55"/>
+                        <rect key="frame" x="18" y="545" width="819" height="55"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Users: " id="xLQ-xu-0TY">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cb1-uH-WKJ">
-                        <rect key="frame" x="688" y="605" width="147" height="22"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="9sY-XJ-zsM">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Ye-kg-95d">
-                        <rect key="frame" x="675" y="608" width="13" height="17"/>
+                        <rect key="frame" x="670" y="609" width="13" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="#" id="TK8-yr-AfP">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cb1-uH-WKJ">
+                        <rect key="frame" x="684" y="606" width="150" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="9sY-XJ-zsM">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="-664.5" y="235.5"/>
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="xPG-7l-mbw"/>
+            </connections>
+            <point key="canvasLocation" x="-664.5" y="170"/>
         </window>
         <userDefaultsController representsSharedInstance="YES" id="p9j-10-KGg"/>
     </objects>
